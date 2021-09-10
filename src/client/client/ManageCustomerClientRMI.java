@@ -16,7 +16,7 @@ public class ManageCustomerClientRMI implements ManageCustomerClient
   {
     try
     {
-      Registry registry = LocateRegistry.getRegistry(1099);
+      Registry registry = LocateRegistry.getRegistry(10990);
       branchClientServer = (ManageCustomerBranchClient) registry.lookup("ManageCustomerBranchServer");
     }
     catch (RemoteException | NotBoundException e)

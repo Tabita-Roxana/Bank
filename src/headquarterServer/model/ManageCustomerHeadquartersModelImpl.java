@@ -16,17 +16,18 @@ public class ManageCustomerHeadquartersModelImpl implements ManageCustomerHeadqu
   @Override public void addCustomer(Customer customer)
   {
     customers.add(customer);
+    System.out.println(customer);
+
   }
 
   @Override public void deleteCustomer(Customer customer)
   {
     customers.remove(customer);
-
   }
 
   @Override public void editAddress(Customer customer, String address)
   {
     customer.setAddress(address);
-
+    System.out.println(customer + " " + address);
   }
 }
